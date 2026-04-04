@@ -18,12 +18,8 @@
 
 include:
   - board: xiao_ble//zmk
-    shield: zukuma_dongle rgbled_adapter #dongle_display 
-  # - board: xiao_ble//zmk
-  #   shield: zukuma
+    shield: laut_dongle rgbled_adapter
   #   shield: settings_reset
   - board: nice_nano//zmk
-    shield: foxyduck
-  #   shield: altiplano
-  #   shield: sosuke
+    shield: laut
   #   shield: settings_reset

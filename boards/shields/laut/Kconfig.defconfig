@@ -1,7 +1,7 @@
-if SHIELD_ZUKUMA_DONGLE
+if SHIELD_LAUT_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "zukuma"
+	default "laut"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -13,7 +13,7 @@ config ZMK_SPLIT_BLE_CENTRAL_PERIPHERALS
 
 endif
 
-if SHIELD_ZUKUMA || SHIELD_ZUKUMA_DONGLE
+if SHIELD_LAUT || SHIELD_LAUT_DONGLE
 
 config ZMK_SPLIT
     default y

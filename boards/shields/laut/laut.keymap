@@ -11,11 +11,9 @@
 #define RGU ks(RGUI)
 #define ROP ks(RALT)
 #define RSH ks(RSHFT)
-#define LEADR &sk LG(LS(LA(LCTRL)))
 #define REP &key_repeat
 #define VOLDN &kp C_VOL_DN
 #define VOLUP &kp C_VOL_UP
-#define VMUTE &kp C_MUTE
 
 / { 
 
