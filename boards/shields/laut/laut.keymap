@@ -18,8 +18,8 @@
 #define FN 3
 #define RST &to 0
 
-#define ZMK_MOUSE_DEFAULT_MOVE_VAL 30000  // 600
-#define ZMK_MOUSE_DEFAULT_SCRL_VAL 30000  // 10
+#define ZMK_MOUSE_DEFAULT_MOVE_VAL 40000  // 600
+#define ZMK_MOUSE_DEFAULT_SCRL_VAL 40000  // 10
 #include <dt-bindings/zmk/pointing.h>
 &mmv {
   acceleration-exponent = <1>;      // 1
@@ -38,6 +38,8 @@
                             bindings = <&macro_tap &kp K_CANCEL>, <&macro_param_1to1>, <&macro_tap &tog MACRO_PLACEHOLDER>; };
         capwrd: capsword  { compatible = "zmk,behavior-macro"; wait-ms = <0>; tap-ms = <1>; #binding-cells = <0>;
                             bindings = <&macro_tap &kp K_CANCEL &caps_word>; };
+        parens: parens    { compatible = "zmk,behavior-macro"; wait-ms = <0>; tap-ms = <1>; #binding-cells = <0>;
+                            bindings = <&macro_tap &kp LPAR &kp RPAR &kp LEFT>; };
         rp: reset_kp      { compatible = "zmk,behavior-macro-one-param"; wait-ms = <0>; tap-ms = <0>; #binding-cells = <1>;
                             bindings = <&macro_tap &kp K_CANCEL>, <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>; };
     };
@@ -72,11 +74,11 @@
         abc {
             display-name = "ABC";
             bindings = <
-            //  1           2           3           4           5           6           7           8           9           10 
+            //  0           1           2           3           4           5           6           7           8           9
                 &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L 
-                &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp ENTER   &kp BSPC 
-                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN SPACE &sl NU    &mo MU
+                &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &sl NU      hs(RGUI)
+                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN SPACE &mo NU    &mo MU 
             >; 
         };
 
@@ -87,7 +89,7 @@
             //  1           2           3           4           5           6           7           8           9           10 
                 &vold       &volu       &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp SEMI    &kp MINUS   &kp EQUAL   &kp BSLH  
                 ____        &kp N0      &kp N4      &kp N5      &kp N6      &key_repeat &kp COMMA   &kp DOT     &kp SQT     &kp SLASH 
-                ____        hs(LGUI)    &kp N7      &kp N8      &kp N9      &capwrd     &kp LBKT    &kp RBKT    ____        ____      
+                ____        hs(LGUI)    &kp N7      &kp N8      &kp N9      &capwrd     &kp LBKT    &kp RBKT    &parens     ____ 
                                         ____        ____        ____        &rp SPACE   ____        &ltg NU 
             >; 
         };
@@ -107,9 +109,9 @@
             display-name = "f->";
             bindings = <
             //  1           2           3           4           5           6           7           8           9           10 
-                &kp ESC     &kp CAPS    &kp F1      &kp F2      &kp F3      &kp INS     &kp PG_UP   &kp HOME    &kp END     &kp PG_DN
+                &kp ESC     &kp CAPS    &kp F1      &kp F2      &kp F3      &kp INS     &kp ENTER   &kp HOME    &kp END     &kp BSPC
                 ____        &kp F10     &kp F4      &kp F5      &kp F6      &mkp MB4    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                ____        hs(RGUI)    &kp F7      &kp F8      &kp F9      &mkp MB5    &kp SPACE   &kp PSCRN   ____        ____     
+                ____        hs(LGUI)    &kp F7      &kp F8      &kp F9      &mkp MB5    &kp SPACE   &kp PG_UP   &kp PG_DN   &kp PSCRN 
                                         hs(RALT)    hs(RCTRL)   ____        ____        ____        &ltg FN
             >; 
         };
