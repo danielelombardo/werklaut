@@ -78,7 +78,7 @@
                 &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L 
                 &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &sl NU      hs(RGUI)
-                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN SPACE &mo NU    &mo MU 
+                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN SPACE  &lkp NU BSPC  &lkp MU ENTER 
             >; 
         };
 
@@ -90,7 +90,7 @@
                 &vold       &volu       &kp N1      &kp N2      &kp N3      &kp GRAVE   &kp SEMI    &kp MINUS   &kp EQUAL   &kp BSLH  
                 ____        &kp N0      &kp N4      &kp N5      &kp N6      &key_repeat &kp COMMA   &kp DOT     &kp SQT     &kp SLASH 
                 ____        hs(LGUI)    &kp N7      &kp N8      &kp N9      &capwrd     &kp LBKT    &kp RBKT    &parens     ____ 
-                                        ____        ____        ____        &rp SPACE   ____        &ltg NU 
+                                        ____        ____        ____        &rp SPACE   ____        ____
             >; 
         };
         
@@ -109,10 +109,10 @@
             display-name = "f->";
             bindings = <
             //  1           2           3           4           5           6           7           8           9           10 
-                &kp ESC     &kp CAPS    &kp F1      &kp F2      &kp F3      &kp INS     &kp ENTER   &kp HOME    &kp END     &kp BSPC
-                ____        &kp F10     &kp F4      &kp F5      &kp F6      &mkp MB4    &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                ____        hs(LGUI)    &kp F7      &kp F8      &kp F9      &mkp MB5    &kp SPACE   &kp PG_UP   &kp PG_DN   &kp PSCRN 
-                                        hs(RALT)    hs(RCTRL)   ____        ____        ____        &ltg FN
+                &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10 
+                ____        &kp PG_UP   &kp HOME    &kp END     &kp PG_DN   &kp INS     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+                ____        hs(LGUI)    &kp CAPS    &mkp MB4    &mkp MB5    &kp SPACE   &kp BSPC    &kp ENTER   &kp ESC     &kp PSCRN 
+                                        hs(RALT)    hs(RCTRL)   ____        ____        &ltg NU     &ltg FN
             >; 
         };
         
