@@ -78,7 +78,7 @@
                 &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P 
                 &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L 
                 &kp DEL     &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &sl NU      hs(RGUI)
-                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp FN SPACE  &lkp NU BSPC  &lkp MU ENTER 
+                                        hs(LALT)    hs(LCTRL)   hs(LSHFT)   &lkp NU SPACE  &lkp FN BSPC  &lkp MU ENTER 
             >; 
         };
 
@@ -117,4 +117,4 @@
         };
         
     }; 
-};
+}
